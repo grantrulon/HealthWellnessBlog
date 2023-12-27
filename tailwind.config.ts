@@ -13,8 +13,24 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            color: '#333',
+            h3: {
+              // fontFamily: ['Roboto', 'sans-serif'],
+              fontSize: '1.17em',
+            },
+            p: {
+              // fontFamily: ['Montserrat', 'sans-serif'],
+            },
+          },
+        },
+      }
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }
 export default config
